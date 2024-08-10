@@ -4,7 +4,7 @@ const initData = require("./data.js");
 const Listing = require("../models/listing.js");
 
 // let MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
-let dbUrl="mongodb+srv://vivek21iya:YUGSVFUSSGL9ESXe@cluster0.ajhlbfx.mongodb.net/?retryWrites=true&w=majority";
+ let dbUrl=process.env.ATLASDB_URL;
 main()
   .then((res) => {
     console.log("success connection");
